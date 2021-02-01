@@ -1,7 +1,26 @@
 import java.util.Arrays;
 
-// calculate running time
-//
+/* calculate running time
+*
+* in inner loop
+* i = 0 => n - 1
+* i = 1 => n - 2
+* ...
+* i = n - 1 => 1
+* i = n => 0
+*
+* Time complexity:
+* Sum = n - 1 + n - 2 + ... + 2 + 1 + 0
+*     = 1 + 2 + 3 + ... + n - 1
+*     = (n - 1) * n / 2
+*     = Theta(n ^ 2)
+*
+* Space complexity:
+* heap: O(1)
+* stack: O(1)
+*
+* */
+
 
 public class SelectionSort {
     public static void selectionSort(int[] arr) {
