@@ -21,9 +21,8 @@ import java.util.Arrays;
 *
 * */
 
-
 public class SelectionSort {
-    public static void selectionSort(int[] arr) {
+    public static void sort(int[] arr) {
         // sanity check
         if (arr == null || arr.length == 0) return;
 
@@ -48,7 +47,7 @@ public class SelectionSort {
 
     public static void main(String[] args) {
         int[] arr = new int[] {4, 5, 6, 7, 9, 10, 20, 7, 8, 2, 3};
-        selectionSort(arr);
+        sort(arr);
         System.out.println(Arrays.toString(arr));
     }
 }
